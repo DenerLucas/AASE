@@ -8,7 +8,7 @@ arquivo_saida = "apartments_categoricals_encoded.csv"
 df = pd.read_csv(arquivo_entrada, encoding="ISO-8859-1", delimiter=";")
 
 # Colunas categóricas a serem tratadas
-colunas_categoricas = ['category', 'currency', 'fee', 'has_photo', 'pets_allowed', 'price_type', 'state']
+colunas_categoricas = ['category', 'fee', 'has_photo', 'pets_allowed', 'price_type', 'state']
 
 # Aplicar One-Hot Encoding nas colunas categóricas
 df_encoded = pd.get_dummies(df, columns=colunas_categoricas, drop_first=True)

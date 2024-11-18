@@ -9,7 +9,7 @@ arquivo_saida = "apartments_textuals_treated.csv"
 df = pd.read_csv(arquivo_entrada, encoding="ISO-8859-1", delimiter=";")
 
 # Colunas textuais a serem tratadas
-colunas_textuais = ['title', 'body', 'amenities']
+colunas_textuais = ['amenities']
 
 # Criar um vetorizador TF-IDF
 vectorizer = TfidfVectorizer(max_features=100)  # Limitar a 100 features para cada coluna

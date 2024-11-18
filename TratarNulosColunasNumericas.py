@@ -1,7 +1,7 @@
 import pandas as pd
 
-# Carregar o dataset original
-df_original = pd.read_csv('apartments_for_rent_classified_10K.csv', encoding='ISO-8859-1', delimiter=';', on_bad_lines='skip')
+# Carregar o dataset original (de entrada)
+df_original = pd.read_csv('apartments_columns_removed.csv', encoding='ISO-8859-1', delimiter=';', on_bad_lines='skip')
 
 # Criar uma cópia do dataset para tratamento
 df = df_original.copy()
